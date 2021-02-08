@@ -1,0 +1,2 @@
+run='mcs -unsafe -out:cqueue.exe cqueue.cs && mono cqueue.exe'
+language = "csharp"
