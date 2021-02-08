@@ -19,13 +19,16 @@ class MainClass {
       return true;
     }
 
-    public int enQueue (string s) {
-      // Return -1 if queue is already full
-      return -1; 
+    public void enQueue (string s) {
+      // Report error if enqueue to full Q
+      if (isFull())
+        Console.WriteLine ("enQueue(): queue full");
     }
 
     public string deQueue () {
       // Dequeue the next string. Return null if Q isEmpty()
+      if (isEmpty())
+        Console.WriteLine ("deQueue(): queue empty");
       return null;
     }
   }
